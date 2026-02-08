@@ -114,7 +114,9 @@ The previous network admin rage quit and destroyed the router on the way out, an
 11. Generate self-signed certificate: **Yes**
 12. Restore web GUI default access: **Y**
 
-## Testing and Verification
+![Router Ping](ping_router.png)
+
+# Testing and Verification
 
 ### Create Test VM
 1. Created Kali VM
@@ -123,24 +125,26 @@ The previous network admin rage quit and destroyed the router on the way out, an
    - Connect to: blue-team-network
 
 
-# Testing & Implementation
-
-# Check IP address assignment
+### Check IP address assignment
 ip a
 
-INSERT IMAGE
+![IP Route](ip_a_cmd.jpg)
 
 
-# Test gateway connectivity
+### Test gateway connectivity
 ping 1.1.1.1
 
 
-INSERT IMAGE
+![GUI Ping](GUI_ping_response.png)
 
-# Test Web GUI (Firefox)
+### Test Web GUI (Firefox)
 1. Open Firefox and navigate to: `10.31.9.1`
 3. Select "Advanced" and accept security warning 
 4. **Login credentials**:
    - Username: `root`
    - Password: `opnsense`
+  
+![OPNsense Login](opensense_login_page.png)
+
+![OPNsense Portal](opensense_portal.png)
 
